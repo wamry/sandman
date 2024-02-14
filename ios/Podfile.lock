@@ -192,6 +192,8 @@ PODS:
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
   - OpenSSL-Universal (1.1.1100)
+  - Permission-Notifications (3.10.1):
+    - RNPermissions
   - PromisesObjC (2.3.1)
   - RCT-Folly (2022.05.16.00):
     - boost
@@ -1330,6 +1332,9 @@ PODS:
   - SocketRocket (0.6.1)
   - sovran-react-native (1.1.0):
     - React-Core
+  - VGSCollectSDK (1.16.0):
+    - VGSCollectSDK/Core (= 1.16.0)
+  - VGSCollectSDK/Core (1.16.0)
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -1362,6 +1367,7 @@ DEPENDENCIES:
   - "Iterable-React-Native-SDK (from `../node_modules/@iterable/react-native-sdk`)"
   - libevent (~> 2.1.12)
   - OpenSSL-Universal (= 1.1.1100)
+  - Permission-Notifications (from `../node_modules/react-native-permissions/ios/Notifications`)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCT-Folly/Fabric (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
@@ -1439,6 +1445,7 @@ DEPENDENCIES:
   - RNSVG (from `../node_modules/react-native-svg`)
   - "segment-analytics-react-native (from `../node_modules/@segment/analytics-react-native`)"
   - "sovran-react-native (from `../node_modules/@segment/sovran-react-native`)"
+  - VGSCollectSDK (~> 1.11)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -1479,6 +1486,7 @@ SPEC REPOS:
     - PromisesObjC
     - Sentry
     - SocketRocket
+    - VGSCollectSDK
 
 EXTERNAL SOURCES:
   boost:
@@ -1496,6 +1504,8 @@ EXTERNAL SOURCES:
     :tag: hermes-2023-11-17-RNv0.73.0-21043a3fc062be445e56a2c10ecd8be028dd9cc5
   Iterable-React-Native-SDK:
     :path: "../node_modules/@iterable/react-native-sdk"
+  Permission-Notifications:
+    :path: "../node_modules/react-native-permissions/ios/Notifications"
   RCT-Folly:
     :podspec: "../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec"
   RCTRequired:
@@ -1688,6 +1698,7 @@ SPEC CHECKSUMS:
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
+  Permission-Notifications: 817390e18898f34adad940cd4141e771e77086ea
   PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
   RCT-Folly: 7169b2b1c44399c76a47b5deaaba715eeeb476c0
   RCTRequired: ab7f915c15569f04a49669e573e6e319a53f9faa
@@ -1765,8 +1776,9 @@ SPEC CHECKSUMS:
   Sentry: 0c5cd63d714187b4a39c331c1f0eb04ba7868341
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   sovran-react-native: 26dc5e42e618e311bb93d6e825e80af1934b8887
+  VGSCollectSDK: 4f81f03f591c0f133adc0fd3a53d0dd902650721
   Yoga: 64cd2a583ead952b0315d5135bf39e053ae9be70
 
-PODFILE CHECKSUM: 04d22e83b769412dc8adbb41f40c5da4bea46251
+PODFILE CHECKSUM: 62f75de61fbf3e804b67ab745414e3bde373f8bc
 
 COCOAPODS: 1.12.1
